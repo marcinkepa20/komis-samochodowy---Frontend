@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ListaComponent } from './Car/lista/lista.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'komis-front';
-}
+
+  constructor(private router:Router){}
+
+  Lista(){
+    this.router.navigate(["lista"]);
+  }
+
+  Nowy(){
+    this.router.navigate(["add"]);
+  }
+
+  }
+

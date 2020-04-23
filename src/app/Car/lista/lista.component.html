@@ -1,0 +1,30 @@
+<div class="container">
+    <div class = "card">
+        <div class="card-header">
+            <h3>Car</h3>
+        </div>
+        <div class="card-body">
+            <table class = "table table-hover">
+                <thead>
+                    <tr class = "text-center">
+                        <th>id</th>
+                        <th>carowner</th>
+                        <th>carbrand</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor ="let cars of car" class = "text-center">
+                        <td>{{cars.id}}</td>
+                        <td>{{cars.carowner}}</td>
+                        <td>{{cars.carbrand}}</td>
+                        <td>
+                            <button class = "btn btn-warning">Edit</button>
+                            <button class = "btn btn-warning" style="margin-left: 10px;">Delate</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
